@@ -1,16 +1,119 @@
-# React + Vite
+# 🤖 AI Career Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered career assistant that analyzes resumes, evaluates ATS compatibility, identifies skill gaps, generates interview questions, and creates personalized learning roadmaps using **Google Gemini AI**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* 📄 Resume Analysis using AI
+* 🎯 ATS Evaluation Score
+* 💼 Skill Gap Analysis
+* 🧠 AI Career Recommendations
+* 🎤 Personalized Interview Questions
+* 📚 Learning Roadmap
+* 🌙 Dark / Light Mode
+* 📱 Responsive UI
+* ✨ Modern Aurora-inspired Interface
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Frontend
+
+* React
+* Vite
+* Tailwind CSS
+* Framer Motion
+
+### Backend
+
+* Node.js
+* Express.js
+* Multer
+* PDF Parser
+
+### AI
+
+* Google Gemini API (Google AI Studio)
+
+---
+
+## 📂 Project Structure
+
+```text
+AI-Career-Assistant/
+│
+├── src/
+├── public/
+├── server/
+│   ├── routes/
+│   ├── utils/
+│   ├── ats/
+│   ├── gemini.js
+│   └── server.js
+│
+├── README.md
+├── package.json
+└── vite.config.js
+```
+
+---
+
+## ⚙️ Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/Sahil77Thakur/AI-Career-Assistant.git
+```
+
+### Install Frontend
+
+```bash
+npm install
+npm run dev
+```
+
+### Install Backend
+
+```bash
+cd server
+npm install
+npm run dev
+```
+
+### Environment Variable
+
+Create a `.env` file inside the `server` folder:
+
+```env
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+```
+
+---
+
+## 🤖 Powered By
+
+* Google Gemini API
+* Google AI Studio
+
+---
+
+## 🎯 Future Improvements
+
+* Job Description Matching
+* AI Cover Letter Generator
+* Resume Version Comparison
+* Authentication & User Profiles
+* Resume Templates
+* Multi-language Resume Analysis
+
+---
+
+## 🏆 Built For
+
+**Vibe2Ship Hackathon**
+
+Built with ❤️ using React, Node.js, Express, and Google Gemini AI.
