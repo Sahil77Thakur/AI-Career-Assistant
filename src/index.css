@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Custom Aurora Animations for Tailwind v4 */
+@keyframes aurora1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(80px, 60px) scale(1.05); }
+}
+
+@keyframes aurora2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-70px, 90px) scale(0.95); }
+}
+
+@keyframes aurora3 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(120px, -80px); }
+}
+
+@keyframes aurora4 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-100px, 70px); }
+}
+
+.animate-aurora1 {
+  animation: aurora1 25s ease-in-out infinite;
+}
+
+.animate-aurora2 {
+  animation: aurora2 28s ease-in-out infinite;
+}
+
+.animate-aurora3 {
+  animation: aurora3 22s ease-in-out infinite;
+}
+
+.animate-aurora4 {
+  animation: aurora4 26s ease-in-out infinite;
+}
