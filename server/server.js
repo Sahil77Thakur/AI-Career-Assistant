@@ -1,4 +1,7 @@
 const express = require("express");
+const cors = require('cors');
+app.use(cors()); // This allows requests from any origin (fine for a hackathon)
+
 const cors = require("cors");
 require("dotenv").config({
   path: __dirname + "/.env",
@@ -23,7 +26,11 @@ app.get("/", (req, res) => {
   });
 });
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
 
 //test api //
 app.get("/test-gemini", async (req, res) => {

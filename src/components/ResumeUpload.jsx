@@ -27,10 +27,11 @@ function ResumeUpload() {
 
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:5000/analyze", {
-        method: "POST",
-        body: formData,
-      });
+   const API_URL = "https://resume-assistant-api.onrender.com";
+const response = await fetch(`${API_URL}/analyze`, {
+  method: "POST",
+  body: formData,
+});
 
       const data = await response.json();
       console.log(data);
